@@ -144,6 +144,6 @@ console.log(MergeSort([1, 6, 3, 19, 2, 9, 17, 11, 5, 5, 22, 75]));
 
 /* Time Complexity */
 
-/* O(N(logN)) Worse case is O(n^2) */
+/* O(n * log n) for best, average, and worst cases */
 
 /******/
