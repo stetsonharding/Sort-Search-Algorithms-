@@ -152,12 +152,24 @@ console.log(MergeSort([1, 6, 3, 19, 2, 9, 17, 11, 5, 5, 22, 75]));
 
 /* Bubble sort algorithm is an algorithm that sorts the array by comparing two adjacent elements and swaps them if they are not in the intended order. Here order can be anything like increasing order or decreasing order.  */
 
-function BubbleSort(arr) {}
+function BubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j + 1];
+        arr[j + 1] = arr[j];
+        arr[j] = temp;
+      }
+    }
+  }
 
-BubbleSort([1, 4, 5, 2, 1, 9, 10, 8, 22, 17]);
+  console.log(arr);
+}
+
+console.log(BubbleSort([1, 4, 5, 2, 1, 9, 10, 8, 22, 17]));
 
 /* Time Complexity */
 
-/* O(N^2) for best, average, and worst cases */
+/* O(N^2) for worse case, best case is O(n) */
 
 /******/
